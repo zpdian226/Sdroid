@@ -1,0 +1,20 @@
+(define (filter f x)
+  (let recur ((x x))
+    (if (null? x)
+        '()
+        (if (f (car x))
+            (cons (car x) (recur (cdr x)))
+            (recur (cdr x))))))
+
+(define (q-sort lst)
+  (if (null? lst)
+      lst
+      (append (q-sort (filter (lambda (x) (<= x (car lst))) (cdr lst)))
+              (list (car lst))
+              (q-sort (filter (lambda (x) (> x (car lst))) (cdr lst))))))
+
+(printTo "load: /sdcard/quicksort.scm\n" target)
+(printTo "before quick sort:\n" target)
+(printTo '(list 3 4 1 4 0 9 89) target)
+(printTo "\nafter quick sort:\n" target)
+(printTo '(q-sort (list 3 4 1 4 0 9 89)) target)
