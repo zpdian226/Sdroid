@@ -1,6 +1,6 @@
 (define context LoadResource.sContext$)
 
-(define tv (.findViewById context org.sdroid.R$id.t1$))
+(define tv (.findViewById context org.zpdian.sdroid.R$id.t1$))
 (.setText tv "hello scheme")
 
 (define i (Intent. context TestActivity.class))

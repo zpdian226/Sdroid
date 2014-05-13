@@ -1,4 +1,4 @@
-package org.sdroid;
+package org.zpdian.sdroid;
 
 import android.app.Activity;
 import android.os.Bundle;

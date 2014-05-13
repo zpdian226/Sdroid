@@ -1,4 +1,4 @@
-package org.sdroid;
+package org.zpdian.sdroid;
 
 import java.io.FileNotFoundException;
 
@@ -93,7 +93,7 @@ public class MainActivity extends Activity implements OnClickListener {
         mEvalEdit.setText(null);
         Object res = "";
         try {
-            JS.load("(define target (.findViewById MainActivity.sContext$ org.sdroid.R$id.dis_1$))");
+            JS.load("(define target (.findViewById MainActivity.sContext$ org.zpdian.sdroid.R$id.dis_1$))");
             res = JS.eval(s);
         } catch (Exception e) {
             Log.e("myTag", "load or eval error");

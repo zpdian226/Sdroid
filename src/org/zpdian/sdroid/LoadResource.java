@@ -1,4 +1,4 @@
-package org.sdroid;
+package org.zpdian.sdroid;
 
 import java.io.FileNotFoundException;
 
@@ -92,7 +92,7 @@ public class LoadResource extends Activity implements OnClickListener {
         initload();
         String script = "/sdcard/calc.scm";
         String loadString = "(load \"" + script + "\")";
-        JS.load("(define target (.findViewById LoadResource.sContext$ org.sdroid.R$id.dis_2$))");
+        JS.load("(define target (.findViewById LoadResource.sContext$ org.zpdian.sdroid.R$id.dis_2$))");
         JS.load(loadString);
     }
 
@@ -100,7 +100,7 @@ public class LoadResource extends Activity implements OnClickListener {
         initload();
         String script = "/sdcard/quicksort.scm";
         String loadString = "(load \"" + script + "\")";
-        JS.load("(define target (.findViewById LoadResource.sContext$ org.sdroid.R$id.dis_2$))");
+        JS.load("(define target (.findViewById LoadResource.sContext$ org.zpdian.sdroid.R$id.dis_2$))");
         JS.load(loadString);
     }
 
@@ -108,7 +108,7 @@ public class LoadResource extends Activity implements OnClickListener {
         initload();
         String script = "/sdcard/mergesort.scm";
         String loadString = "(load \"" + script + "\")";
-        JS.load("(define target (.findViewById LoadResource.sContext$ org.sdroid.R$id.dis_2$))");
+        JS.load("(define target (.findViewById LoadResource.sContext$ org.zpdian.sdroid.R$id.dis_2$))");
         JS.load(loadString);
     }
 
@@ -116,7 +116,7 @@ public class LoadResource extends Activity implements OnClickListener {
         initload();
         String script = "/sdcard/startActivity.scm";
         String loadString = "(load \"" + script + "\")";
-        JS.load("(define target (.findViewById LoadResource.sContext$ org.sdroid.R$id.dis_2$))");
+        JS.load("(define target (.findViewById LoadResource.sContext$ org.zpdian.sdroid.R$id.dis_2$))");
         JS.load(loadString);
     }
 
